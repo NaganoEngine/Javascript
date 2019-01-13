@@ -1,4 +1,4 @@
-//フォームinput要素
+ //フォームinput要素
 $(function(stop){
 stop=document.getElementById("send1p").disabled=true;
 
