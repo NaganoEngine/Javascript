@@ -1,12 +1,11 @@
-
 jQuery(document).ready(function($) {
   var prefix_file_list = 'file_list_'; 
-// •i–Ú“ü—Í—“‚Ìname‘®«‚ÌÚ“ª«
+// å“ç›®å…¥åŠ›æ¬„ã®nameå±æ€§ã®æ¥é ­è¾
 
-// "•i–Ú‚Ì’Ç‰Á"ƒ{ƒ^ƒ“‚ğ‰Ÿ‚µ‚½ê‡‚Ìˆ—
+// "å“ç›®ã®è¿½åŠ "ãƒœã‚¿ãƒ³ã‚’æŠ¼ã—ãŸå ´åˆã®å‡¦ç†
 	
 $('#btn_add').click(function(){
-// •i–Ú“ü—Í—“‚ğ’Ç‰Á
+// å“ç›®å…¥åŠ›æ¬„ã‚’è¿½åŠ 
 var len_list = $('#file_list > li').length;
 var new_list = '<li><input type="file"  name="file_contents[]"></li>';
 if(len_list == 5)
@@ -16,7 +15,7 @@ return false;
 $('#file_list').append(new_list);
 
 
-// íœƒ{ƒ^ƒ“‚Ìˆê’U‘SÁ‹‚µA”z’u‚µ’¼‚·
+// å‰Šé™¤ãƒœã‚¿ãƒ³ã®ä¸€æ—¦å…¨æ¶ˆå»ã—ã€é…ç½®ã—ç›´ã™
 $('#file_list input[type="button"]').remove();
 len_list++;
 
@@ -27,19 +26,19 @@ $('#file_list > li').eq(i).append(new_btn);
 }
 );
 
-// íœƒ{ƒ^ƒ“‚ğ‰Ÿ‚µ‚½ê‡‚Ìˆ—
+// å‰Šé™¤ãƒœã‚¿ãƒ³ã‚’æŠ¼ã—ãŸå ´åˆã®å‡¦ç†
 $(document).on('click', '#file_list input[type="button"]', 
 
 function(ev) {
-// •i–Ú“ü—Í—“‚ğíœ
+// å“ç›®å…¥åŠ›æ¬„ã‚’å‰Šé™¤
 var idx = $(ev.target).parent().index();
 $('#file_list > li').eq(idx).remove();
 var len_list = $('#file_list > li').length;
 
-// “ü—Í—“‚ª‚Ğ‚Æ‚Â‚É‚È‚é‚È‚çAíœƒ{ƒ^ƒ“‚Í•s—v‚È‚Ì‚ÅÁ‹
+// å…¥åŠ›æ¬„ãŒã²ã¨ã¤ã«ãªã‚‹ãªã‚‰ã€å‰Šé™¤ãƒœã‚¿ãƒ³ã¯ä¸è¦ãªã®ã§æ¶ˆå»
 if (len_list == 1) $('#file_list input[type="button"]').remove();
 
-// “ü—Í—“‚Ì”Ô†‚ğU‚è’¼‚·
+// å…¥åŠ›æ¬„ã®ç•ªå·ã‚’æŒ¯ã‚Šç›´ã™
 for (var i=0; i<len_list; i++) {
 $('#file_list > li').eq(i).children('input[type="file"]').attr('name', 'file_contents[]');
 	}
