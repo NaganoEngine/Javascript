@@ -1,3 +1,4 @@
+
 var
 spre="select#showpref";
 //都道府県オプションID
