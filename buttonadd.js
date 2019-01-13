@@ -1,3 +1,4 @@
+
 $(function(){
 $("input#uploadfile_1").change(function(event){
 var hantei = new Array();
@@ -12,23 +13,23 @@ i=0;
 var reader = new FileReader();
     reader.readAsDataURL(file);
     reader.onload = function(){
-//data URL‚ğæ“¾
+//data URLã‚’å–å¾—
 var dataURL = reader.result;
-//data URL‚ğ”wŒi‚Éİ’è
+//data URLã‚’èƒŒæ™¯ã«è¨­å®š
 $("img#uploadfile_1").attr("src",dataURL);
-//data URL‚ğlocalStorage‚É•Û‘¶
+//data URLã‚’localStorageã«ä¿å­˜
 localStorage.background = dataURL;
 }
 
 if(Number((file.size/1024)/1024).toFixed(2)>500){
-$("span#uploadfile_1").html("<font color='red'>ƒtƒ@ƒCƒ‹ƒTƒCƒY‚Í500MBˆÈ“à‚Éû‚ß‚Ä‰º‚³‚¢B</font><br>");
+$("span#uploadfile_1").html("<font color='red'>ãƒ•ã‚¡ã‚¤ãƒ«ã‚µã‚¤ã‚ºã¯500MBä»¥å†…ã«åã‚ã¦ä¸‹ã•ã„ã€‚</font><br>");
 }
 else if(!file_type.match("image/")){
-$("span#uploadfile_1").html("<font color='red'>‰æ‘œŒ`®‚ÅƒAƒbƒvƒ[ƒh‚µ‚Ä‚­‚¾‚³‚¢B</font><br>");
+$("span#uploadfile_1").html("<font color='red'>ç”»åƒå½¢å¼ã§ã‚¢ãƒƒãƒ—ãƒ­ãƒ¼ãƒ‰ã—ã¦ãã ã•ã„ã€‚</font><br>");
 } 
 else{
 $("img#uploadfile_1").remove();
-//V‹Kƒtƒ@ƒCƒ‹“ü—Íî•ñ
+//æ–°è¦ãƒ•ã‚¡ã‚¤ãƒ«å…¥åŠ›æƒ…å ±
 $("div#uploadfile_1").after('<div align="center"><img id="uploadfile_1" class="img" width="120px" height="90px" style="margin-bottom:10px; margin-top:10px"></div>');
 $("span#uploadfile_1").html(
 '<br><br>'+'Filename:&nbsp;'+file.name +'<br>'+
@@ -50,12 +51,12 @@ $("img#uploadfile_1").attr("src",localStorage.background);
 
 jQuery(document).ready(function($) {
   var prefix_file_list = 'file_list_'; 
-// •i–Ú“ü—Í—“‚Ìname‘®«‚ÌÚ“ª«
+// å“ç›®å…¥åŠ›æ¬„ã®nameå±æ€§ã®æ¥é ­è¾
 
-// "•i–Ú‚Ì’Ç‰Á"ƒ{ƒ^ƒ“‚ğ‰Ÿ‚µ‚½ê‡‚Ìˆ—
+// "å“ç›®ã®è¿½åŠ "ãƒœã‚¿ãƒ³ã‚’æŠ¼ã—ãŸå ´åˆã®å‡¦ç†
 	
 $('#btn_add').click(function(){
-// •i–Ú“ü—Í—“‚ğ’Ç‰Á
+// å“ç›®å…¥åŠ›æ¬„ã‚’è¿½åŠ 
 var i=1; i++;  
 var len_list = $('#file_list > li').length;
 var idd=" id=uploadfile_"+i;
@@ -82,21 +83,21 @@ $("input#uploadfile_2").change(function(event){
 var reader = new FileReader();
     reader.readAsDataURL(file);
     reader.onload = function(){
-//data URL‚ğæ“¾
+//data URLã‚’å–å¾—
 var dataURL = reader.result;
-//data URL‚ğ”wŒi‚Éİ’è
+//data URLã‚’èƒŒæ™¯ã«è¨­å®š
 $("img#uploadfile_2").attr("src",dataURL);
-//data URL‚ğlocalStorage‚É•Û‘¶
+//data URLã‚’localStorageã«ä¿å­˜
 localStorage.background = dataURL;
 }
 
 if(Number((file.size/1024)/1024).toFixed(2)>500){
-$("span#uploadfile_2").html("<font color='red'>ƒtƒ@ƒCƒ‹ƒTƒCƒY‚Í500MBˆÈ“à‚Éû‚ß‚Ä‰º‚³‚¢B</font><br>");
+$("span#uploadfile_2").html("<font color='red'>ãƒ•ã‚¡ã‚¤ãƒ«ã‚µã‚¤ã‚ºã¯500MBä»¥å†…ã«åã‚ã¦ä¸‹ã•ã„ã€‚</font><br>");
 }else if(!file_type.match("image/")){
-$("span#uploadfile_2").html("<font color='red'>‰æ‘œŒ`®‚ÅƒAƒbƒvƒ[ƒh‚µ‚Ä‚­‚¾‚³‚¢B</font><br>");
+$("span#uploadfile_2").html("<font color='red'>ç”»åƒå½¢å¼ã§ã‚¢ãƒƒãƒ—ãƒ­ãƒ¼ãƒ‰ã—ã¦ãã ã•ã„ã€‚</font><br>");
 }else{
 $("img#uploadfile_2").remove();
-//V‹Kƒtƒ@ƒCƒ‹“ü—Íî•ñ
+//æ–°è¦ãƒ•ã‚¡ã‚¤ãƒ«å…¥åŠ›æƒ…å ±
 $("div#uploadfile_2").after('<div align="center"><img id="uploadfile_2" class="img" width="120px" height="90px" style="margin-bottom:10px; margin-top:10px"></div>');
 $("span#uploadfile_2").html(
 '<br><br>'+'Filename:&nbsp;'+file.name +'<br>'+
@@ -129,21 +130,21 @@ $("input#uploadfile_3").change(function(event){
 var reader = new FileReader();
     reader.readAsDataURL(file);
     reader.onload = function(){
-//data URL‚ğæ“¾
+//data URLã‚’å–å¾—
 var dataURL = reader.result;
-//data URL‚ğ”wŒi‚Éİ’è
+//data URLã‚’èƒŒæ™¯ã«è¨­å®š
 $("img#uploadfile_3").attr("src",dataURL);
-//data URL‚ğlocalStorage‚É•Û‘¶
+//data URLã‚’localStorageã«ä¿å­˜
 localStorage.background = dataURL;
 }
 
 if(Number((file.size/1024)/1024).toFixed(2)>500){
-$("span#uploadfile_3").html("<font color='red'>ƒtƒ@ƒCƒ‹ƒTƒCƒY‚Í500MBˆÈ“à‚Éû‚ß‚Ä‰º‚³‚¢B</font><br>");
+$("span#uploadfile_3").html("<font color='red'>ãƒ•ã‚¡ã‚¤ãƒ«ã‚µã‚¤ã‚ºã¯500MBä»¥å†…ã«åã‚ã¦ä¸‹ã•ã„ã€‚</font><br>");
 }else if(!file_type.match("image/")){
-$("span#uploadfile_3").html("<font color='red'>‰æ‘œŒ`®‚ÅƒAƒbƒvƒ[ƒh‚µ‚Ä‚­‚¾‚³‚¢B</font><br>");
+$("span#uploadfile_3").html("<font color='red'>ç”»åƒå½¢å¼ã§ã‚¢ãƒƒãƒ—ãƒ­ãƒ¼ãƒ‰ã—ã¦ãã ã•ã„ã€‚</font><br>");
 }else{
 $("img#uploadfile_3").remove();
-//V‹Kƒtƒ@ƒCƒ‹“ü—Íî•ñ
+//æ–°è¦ãƒ•ã‚¡ã‚¤ãƒ«å…¥åŠ›æƒ…å ±
 $("div#uploadfile_3").after('<div align="center"><img id="uploadfile_3" class="img" width="120px" height="90px" style="margin-bottom:10px; margin-top:10px"></div>');
 $("span#uploadfile_3").html(
 '<br><br>'+'Filename:&nbsp;'+file.name +'<br>'+
@@ -177,21 +178,21 @@ $("input#uploadfile_4").change(function(event){
 var reader = new FileReader();
     reader.readAsDataURL(file);
     reader.onload = function(){
-//data URL‚ğæ“¾
+//data URLã‚’å–å¾—
 var dataURL = reader.result;
-//data URL‚ğ”wŒi‚Éİ’è
+//data URLã‚’èƒŒæ™¯ã«è¨­å®š
 $("img#uploadfile_4").attr("src",dataURL);
-//data URL‚ğlocalStorage‚É•Û‘¶
+//data URLã‚’localStorageã«ä¿å­˜
 localStorage.background = dataURL;
 }
 
 if(Number((file.size/1024)/1024).toFixed(2)>500){
-$("span#uploadfile_4").html("<font color='red'>ƒtƒ@ƒCƒ‹ƒTƒCƒY‚Í500MBˆÈ“à‚Éû‚ß‚Ä‰º‚³‚¢B</font><br>");
+$("span#uploadfile_4").html("<font color='red'>ãƒ•ã‚¡ã‚¤ãƒ«ã‚µã‚¤ã‚ºã¯500MBä»¥å†…ã«åã‚ã¦ä¸‹ã•ã„ã€‚</font><br>");
 }else if(!file_type.match("image/")){
-$("span#uploadfile_4").html("<font color='red'>‰æ‘œŒ`®‚ÅƒAƒbƒvƒ[ƒh‚µ‚Ä‚­‚¾‚³‚¢B</font><br>");
+$("span#uploadfile_4").html("<font color='red'>ç”»åƒå½¢å¼ã§ã‚¢ãƒƒãƒ—ãƒ­ãƒ¼ãƒ‰ã—ã¦ãã ã•ã„ã€‚</font><br>");
 }else{
 $("img#uploadfile_4").remove();
-//V‹Kƒtƒ@ƒCƒ‹“ü—Íî•ñ
+//æ–°è¦ãƒ•ã‚¡ã‚¤ãƒ«å…¥åŠ›æƒ…å ±
 $("div#uploadfile_4").after('<div align="center"><img id="uploadfile_4" class="img" width="120px" height="90px" style="margin-bottom:10px; margin-top:10px"></div>');
 $("span#uploadfile_4").html(
 '<br><br>'+'Filename:&nbsp;'+file.name +'<br>'+
@@ -225,21 +226,21 @@ $("input#uploadfile_5").change(function(event){
 var reader = new FileReader();
     reader.readAsDataURL(file);
     reader.onload = function(){
-//data URL‚ğæ“¾
+//data URLã‚’å–å¾—
 var dataURL = reader.result;
-//data URL‚ğ”wŒi‚Éİ’è
+//data URLã‚’èƒŒæ™¯ã«è¨­å®š
 $("img#uploadfile_5").attr("src",dataURL);
-//data URL‚ğlocalStorage‚É•Û‘¶
+//data URLã‚’localStorageã«ä¿å­˜
 localStorage.background = dataURL;
 }
 
 if(Number((file.size/1024)/1024).toFixed(2)>500){
-$("span#uploadfile_5").html("<font color='red'>ƒtƒ@ƒCƒ‹ƒTƒCƒY‚Í500MBˆÈ“à‚Éû‚ß‚Ä‰º‚³‚¢B</font><br>");
+$("span#uploadfile_5").html("<font color='red'>ãƒ•ã‚¡ã‚¤ãƒ«ã‚µã‚¤ã‚ºã¯500MBä»¥å†…ã«åã‚ã¦ä¸‹ã•ã„ã€‚</font><br>");
 }else if(!file_type.match("image/")){
-$("span#uploadfile_5").html("<font color='red'>‰æ‘œŒ`®‚ÅƒAƒbƒvƒ[ƒh‚µ‚Ä‚­‚¾‚³‚¢B</font><br>");
+$("span#uploadfile_5").html("<font color='red'>ç”»åƒå½¢å¼ã§ã‚¢ãƒƒãƒ—ãƒ­ãƒ¼ãƒ‰ã—ã¦ãã ã•ã„ã€‚</font><br>");
 }else{
 $("img#uploadfile_5").remove();
-//V‹Kƒtƒ@ƒCƒ‹“ü—Íî•ñ
+//æ–°è¦ãƒ•ã‚¡ã‚¤ãƒ«å…¥åŠ›æƒ…å ±
 $("div#uploadfile_5").after('<div align="center"><img id="uploadfile_5" class="img" width="120px" height="90px" style="margin-bottom:10px; margin-top:10px"></div>');
 $("span#uploadfile_5").html(
 '<br><br>'+'Filename:&nbsp;'+file.name +'<br>'+
@@ -281,7 +282,7 @@ localStorage.clear();
 /*---------------------------------------------uploadfile_5-------------------------------------------------------------------------*/
 
 
-// íœƒ{ƒ^ƒ“‚Ìˆê’U‘SÁ‹‚µA”z’u‚µ’¼‚·
+// å‰Šé™¤ãƒœã‚¿ãƒ³ã®ä¸€æ—¦å…¨æ¶ˆå»ã—ã€é…ç½®ã—ç›´ã™
 $('#file_list input[type="button"]').remove();
 len_list++;
 
@@ -292,19 +293,19 @@ $('#file_list > li').eq(i).append(new_btn);
 }
 );
 
-// íœƒ{ƒ^ƒ“‚ğ‰Ÿ‚µ‚½ê‡‚Ìˆ—
+// å‰Šé™¤ãƒœã‚¿ãƒ³ã‚’æŠ¼ã—ãŸå ´åˆã®å‡¦ç†
 $(document).on('click', '#file_list input[type="button"]', 
 
 function(ev) {
-// •i–Ú“ü—Í—“‚ğíœ
+// å“ç›®å…¥åŠ›æ¬„ã‚’å‰Šé™¤
 var idx = $(ev.target).parent().index();
 $('#file_list > li').eq(idx).remove();
 var len_list = $('#file_list > li').length;
 
-// “ü—Í—“‚ª‚Ğ‚Æ‚Â‚É‚È‚é‚È‚çAíœƒ{ƒ^ƒ“‚Í•s—v‚È‚Ì‚ÅÁ‹
+// å…¥åŠ›æ¬„ãŒã²ã¨ã¤ã«ãªã‚‹ãªã‚‰ã€å‰Šé™¤ãƒœã‚¿ãƒ³ã¯ä¸è¦ãªã®ã§æ¶ˆå»
 if (len_list == 1) $('#file_list input[type="button"]').remove();
 
-// “ü—Í—“‚Ì”Ô†‚ğU‚è’¼‚·
+// å…¥åŠ›æ¬„ã®ç•ªå·ã‚’æŒ¯ã‚Šç›´ã™
 for (var i=0; i<len_list; i++) {
 $('#file_list > li').eq(i).children('input[type="file"]').attr('name', 'upload_file[]');
 	}
