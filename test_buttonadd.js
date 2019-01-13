@@ -1,7 +1,7 @@
-//HTML_READ_FINISH
+ //HTML_READ_FINISH
 $(document).ready(function($) {
 <!-------------------------------------------------------ADITIONAL_DIVISION---------------------------------------------------------------!>
-//QÆ”z—ñ
+//å‚ç…§é…åˆ—
 a=1; 
 ida=new Array();
 ida[0]=" id=uploadfile_1";
@@ -51,7 +51,7 @@ if(input_figure == 5){
 return false;//SCRIPT_STOP
 }
 $("div#set").append(new_files);
-// íœƒ{ƒ^ƒ“‚Ìˆê’U‘SÁ‹‚µA”z’u‚µ’¼‚·
+// å‰Šé™¤ãƒœã‚¿ãƒ³ã®ä¸€æ—¦å…¨æ¶ˆå»ã—ã€é…ç½®ã—ç›´ã™
 $('input.can').remove();
 var  
 re_1='<input type="button" name="cancel" id="cancel_1" class="can"  value="CANCEL">';
@@ -81,23 +81,23 @@ i=0;
 var reader = new FileReader();
     reader.readAsDataURL(file);
     reader.onload = function(){
-//data URL‚ğæ“¾
+//data URLã‚’å–å¾—
 var dataURL = reader.result;
-//data URL‚ğ”wŒi‚Éİ’è
+//data URLã‚’èƒŒæ™¯ã«è¨­å®š
 $("img#uploadfile_1").attr("src",dataURL);
-//data URL‚ğlocalStorage‚É•Û‘¶
+//data URLã‚’localStorageã«ä¿å­˜
 localStorage.background = dataURL;
 }
 
 if(Number((file.size/1024)/1024).toFixed(2)>500){
-$("span#uploadfile_1").html("<font color='red'>ƒtƒ@ƒCƒ‹ƒTƒCƒY‚Í500MBˆÈ“à‚Éû‚ß‚Ä‰º‚³‚¢B</font><br>");
+$("span#uploadfile_1").html("<font color='red'>ãƒ•ã‚¡ã‚¤ãƒ«ã‚µã‚¤ã‚ºã¯500MBä»¥å†…ã«åã‚ã¦ä¸‹ã•ã„ã€‚</font><br>");
 }
 else if(!file_type.match("image/")){
-$("span#uploadfile_1").html("<font color='red'>‰æ‘œŒ`®‚ÅƒAƒbƒvƒ[ƒh‚µ‚Ä‚­‚¾‚³‚¢B</font><br>");
+$("span#uploadfile_1").html("<font color='red'>ç”»åƒå½¢å¼ã§ã‚¢ãƒƒãƒ—ãƒ­ãƒ¼ãƒ‰ã—ã¦ãã ã•ã„ã€‚</font><br>");
 } 
 else{
 $("img#uploadfile_1").remove();
-//V‹Kƒtƒ@ƒCƒ‹“ü—Íî•ñ
+//æ–°è¦ãƒ•ã‚¡ã‚¤ãƒ«å…¥åŠ›æƒ…å ±
 $("div#uploadfile_1").append('<div align="center"><img id="uploadfile_1" class="img" width="120px" height="90px" style="margin-bottom:10px; margin-top:10px"></div>');
 $("span#uploadfile_1").html(
 '<br><br>'+'Filename:&nbsp;'+file.name +'<br>'+
@@ -130,21 +130,21 @@ $(document).on("change","input#uploadfile_2",function(event){
 var reader = new FileReader();
     reader.readAsDataURL(file);
     reader.onload = function(){
-//data URL‚ğæ“¾
+//data URLã‚’å–å¾—
 var dataURL = reader.result;
-//data URL‚ğ”wŒi‚Éİ’è
+//data URLã‚’èƒŒæ™¯ã«è¨­å®š
 $("img#uploadfile_2").attr("src",dataURL);
-//data URL‚ğlocalStorage‚É•Û‘¶
+//data URLã‚’localStorageã«ä¿å­˜
 localStorage.background = dataURL;
 }
 
 if(Number((file.size/1024)/1024).toFixed(2)>500){
-$("span#uploadfile_2").html("<font color='red'>ƒtƒ@ƒCƒ‹ƒTƒCƒY‚Í500MBˆÈ“à‚Éû‚ß‚Ä‰º‚³‚¢B</font><br>");
+$("span#uploadfile_2").html("<font color='red'>ãƒ•ã‚¡ã‚¤ãƒ«ã‚µã‚¤ã‚ºã¯500MBä»¥å†…ã«åã‚ã¦ä¸‹ã•ã„ã€‚</font><br>");
 }else if(!file_type.match("image/")){
-$("span#uploadfile_2").html("<font color='red'>‰æ‘œŒ`®‚ÅƒAƒbƒvƒ[ƒh‚µ‚Ä‚­‚¾‚³‚¢B</font><br>");
+$("span#uploadfile_2").html("<font color='red'>ç”»åƒå½¢å¼ã§ã‚¢ãƒƒãƒ—ãƒ­ãƒ¼ãƒ‰ã—ã¦ãã ã•ã„ã€‚</font><br>");
 }else{
 $("img#uploadfile_2").remove();
-//V‹Kƒtƒ@ƒCƒ‹“ü—Íî•ñ
+//æ–°è¦ãƒ•ã‚¡ã‚¤ãƒ«å…¥åŠ›æƒ…å ±
 $("div#uploadfile_2").append('<div align="center"><img id="uploadfile_2" class="img" width="120px" height="90px" style="margin-bottom:10px; margin-top:10px"></div>');
 $("span#uploadfile_2").html(
 '<br><br>'+'Filename:&nbsp;'+file.name +'<br>'+
@@ -176,21 +176,21 @@ $(document).on("change","input#uploadfile_3",function(event){
 var reader = new FileReader();
     reader.readAsDataURL(file);
     reader.onload = function(){
-//data URL‚ğæ“¾
+//data URLã‚’å–å¾—
 var dataURL = reader.result;
-//data URL‚ğ”wŒi‚Éİ’è
+//data URLã‚’èƒŒæ™¯ã«è¨­å®š
 $("img#uploadfile_3").attr("src",dataURL);
-//data URL‚ğlocalStorage‚É•Û‘¶
+//data URLã‚’localStorageã«ä¿å­˜
 localStorage.background = dataURL;
 }
 
 if(Number((file.size/1024)/1024).toFixed(2)>500){
-$("span#uploadfile_3").html("<font color='red'>ƒtƒ@ƒCƒ‹ƒTƒCƒY‚Í500MBˆÈ“à‚Éû‚ß‚Ä‰º‚³‚¢B</font><br>");
+$("span#uploadfile_3").html("<font color='red'>ãƒ•ã‚¡ã‚¤ãƒ«ã‚µã‚¤ã‚ºã¯500MBä»¥å†…ã«åã‚ã¦ä¸‹ã•ã„ã€‚</font><br>");
 }else if(!file_type.match("image/")){
-$("span#uploadfile_3").html("<font color='red'>‰æ‘œŒ`®‚ÅƒAƒbƒvƒ[ƒh‚µ‚Ä‚­‚¾‚³‚¢B</font><br>");
+$("span#uploadfile_3").html("<font color='red'>ç”»åƒå½¢å¼ã§ã‚¢ãƒƒãƒ—ãƒ­ãƒ¼ãƒ‰ã—ã¦ãã ã•ã„ã€‚</font><br>");
 }else{
 $("img#uploadfile_3").remove();
-//V‹Kƒtƒ@ƒCƒ‹“ü—Íî•ñ
+//æ–°è¦ãƒ•ã‚¡ã‚¤ãƒ«å…¥åŠ›æƒ…å ±
 $("div#uploadfile_3").append('<div align="center"><img id="uploadfile_3" class="img" width="120px" height="90px" style="margin-bottom:10px; margin-top:10px"></div>');
 $("span#uploadfile_3").html(
 '<br><br>'+'Filename:&nbsp;'+file.name +'<br>'+
@@ -222,21 +222,21 @@ $(document).on("change","input#uploadfile_4",function(event){
 var reader = new FileReader();
     reader.readAsDataURL(file);
     reader.onload = function(){
-//data URL‚ğæ“¾
+//data URLã‚’å–å¾—
 var dataURL = reader.result;
-//data URL‚ğ”wŒi‚Éİ’è
+//data URLã‚’èƒŒæ™¯ã«è¨­å®š
 $("img#uploadfile_4").attr("src",dataURL);
-//data URL‚ğlocalStorage‚É•Û‘¶
+//data URLã‚’localStorageã«ä¿å­˜
 localStorage.background = dataURL;
 }
 
 if(Number((file.size/1024)/1024).toFixed(2)>500){
-$("span#uploadfile_4").html("<font color='red'>ƒtƒ@ƒCƒ‹ƒTƒCƒY‚Í500MBˆÈ“à‚Éû‚ß‚Ä‰º‚³‚¢B</font><br>");
+$("span#uploadfile_4").html("<font color='red'>ãƒ•ã‚¡ã‚¤ãƒ«ã‚µã‚¤ã‚ºã¯500MBä»¥å†…ã«åã‚ã¦ä¸‹ã•ã„ã€‚</font><br>");
 }else if(!file_type.match("image/")){
-$("span#uploadfile_4").html("<font color='red'>‰æ‘œŒ`®‚ÅƒAƒbƒvƒ[ƒh‚µ‚Ä‚­‚¾‚³‚¢B</font><br>");
+$("span#uploadfile_4").html("<font color='red'>ç”»åƒå½¢å¼ã§ã‚¢ãƒƒãƒ—ãƒ­ãƒ¼ãƒ‰ã—ã¦ãã ã•ã„ã€‚</font><br>");
 }else{
 $("img#uploadfile_4").remove();
-//V‹Kƒtƒ@ƒCƒ‹“ü—Íî•ñ
+//æ–°è¦ãƒ•ã‚¡ã‚¤ãƒ«å…¥åŠ›æƒ…å ±
 $("div#uploadfile_4").append('<div align="center"><img id="uploadfile_4" class="img" width="120px" height="90px" style="margin-bottom:10px; margin-top:10px"></div>');
 $("span#uploadfile_4").html(
 '<br><br>'+'Filename:&nbsp;'+file.name +'<br>'+
@@ -269,21 +269,21 @@ $(document).on("change","input#uploadfile_5",function(event){
 var reader = new FileReader();
     reader.readAsDataURL(file);
     reader.onload = function(){
-//data URL‚ğæ“¾
+//data URLã‚’å–å¾—
 var dataURL = reader.result;
-//data URL‚ğ”wŒi‚Éİ’è
+//data URLã‚’èƒŒæ™¯ã«è¨­å®š
 $("img#uploadfile_5").attr("src",dataURL);
-//data URL‚ğlocalStorage‚É•Û‘¶
+//data URLã‚’localStorageã«ä¿å­˜
 localStorage.background = dataURL;
 }
 
 if(Number((file.size/1024)/1024).toFixed(2)>500){
-$("span#uploadfile_5").html("<font color='red'>ƒtƒ@ƒCƒ‹ƒTƒCƒY‚Í500MBˆÈ“à‚Éû‚ß‚Ä‰º‚³‚¢B</font><br>");
+$("span#uploadfile_5").html("<font color='red'>ãƒ•ã‚¡ã‚¤ãƒ«ã‚µã‚¤ã‚ºã¯500MBä»¥å†…ã«åã‚ã¦ä¸‹ã•ã„ã€‚</font><br>");
 }else if(!file_type.match("image/")){
-$("span#uploadfile_5").html("<font color='red'>‰æ‘œŒ`®‚ÅƒAƒbƒvƒ[ƒh‚µ‚Ä‚­‚¾‚³‚¢B</font><br>");
+$("span#uploadfile_5").html("<font color='red'>ç”»åƒå½¢å¼ã§ã‚¢ãƒƒãƒ—ãƒ­ãƒ¼ãƒ‰ã—ã¦ãã ã•ã„ã€‚</font><br>");
 }else{
 $("img#uploadfile_5").remove();
-//V‹Kƒtƒ@ƒCƒ‹“ü—Íî•ñ
+//æ–°è¦ãƒ•ã‚¡ã‚¤ãƒ«å…¥åŠ›æƒ…å ±
 $("div#uploadfile_5").append('<div align="center"><img id="uploadfile_5" class="img" width="120px" height="90px" style="margin-bottom:10px; margin-top:10px"></div>');
 $("span#uploadfile_5").html(
 '<br><br>'+'Filename:&nbsp;'+file.name +'<br>'+
