@@ -1,7 +1,6 @@
 //HTML_READ_FINISH
-
 <!-------------------------------------------------------ADITIONAL_DIVISION---------------------------------------------------------------!>
-//QÆ”z—ñ
+//å‚ç…§é…åˆ—
 a=1; 
 ida=new Array();
 ida[0]=" id=uploadfile_1";
@@ -51,7 +50,7 @@ if(input_figure == 5){
 return false;//SCRIPT_STOP
 }
 $("div#set").append(new_files);
-// íœƒ{ƒ^ƒ“‚Ìˆê’U‘SÁ‹‚µA”z’u‚µ’¼‚·
+// å‰Šé™¤ãƒœã‚¿ãƒ³ã®ä¸€æ—¦å…¨æ¶ˆå»ã—ã€é…ç½®ã—ç›´ã™
 $('input.can').remove();
 var  
 re_1='<input type="button" name="cancel" id="cancel_1" class="can"  value="CANCEL">';
@@ -92,17 +91,17 @@ i=0;
 var reader = new FileReader();
     reader.readAsDataURL(file);
     reader.onload = function(){
-//data URL‚ğæ“¾
+//data URLã‚’å–å¾—
 var dataURL = reader.result;
-//data URL‚ğ”wŒi‚Éİ’è
+//data URLã‚’èƒŒæ™¯ã«è¨­å®š
 $("img#uploadfile_1").attr("src",dataURL);
-//data URL‚ğlocalStorage‚É•Û‘¶
+//data URLã‚’localStorageã«ä¿å­˜
 localStorage.background = dataURL;
 }//onload
 
 if(Number((file.size/1024)/1024).toFixed(2)>500){
 $("div#glayLayer").show();	
-$("div#overLayer").show().html("<font color='red'>ƒtƒ@ƒCƒ‹ƒTƒCƒY‚Í500MBˆÈ“à‚Éû‚ß‚Ä‰º‚³‚¢B</font><br>").css({
+$("div#overLayer").show().html("<font color='red'>ãƒ•ã‚¡ã‚¤ãƒ«ã‚µã‚¤ã‚ºã¯500MBä»¥å†…ã«åã‚ã¦ä¸‹ã•ã„ã€‚</font><br>").css({
 marginTop:"-"+$("div#overLayer").height()/2+"px",
 marginLeft:"-"+$("div#overLayer").width()/2+"px"
 });
@@ -124,8 +123,8 @@ $(this).attr("src",b)
 }//elseif 
 else{
 $("img#uploadfile_1").remove();
-//V‹Kƒtƒ@ƒCƒ‹“ü—Íî•ñ
-//V‹Kƒtƒ@ƒCƒ‹“ü—Íî•ñ
+//æ–°è¦ãƒ•ã‚¡ã‚¤ãƒ«å…¥åŠ›æƒ…å ±
+//æ–°è¦ãƒ•ã‚¡ã‚¤ãƒ«å…¥åŠ›æƒ…å ±
 $("div#glayLayer").show();
 $("div#overLayer").show().html('<div align="center"><img src="../css/close_button_white30.png" class="close"/>'+'<img id="uploadfile_1" class="img" width="240px" height="180px" style="margin-bottom:10px; margin-top:10px"></div>'+'<font size="3"><b>'+
 '<br>'+'Filename:&nbsp;'+file.name +'<br>'+
@@ -195,17 +194,17 @@ i=0;
 var reader = new FileReader();
     reader.readAsDataURL(file);
     reader.onload = function(){
-//data URL‚ğæ“¾
+//data URLã‚’å–å¾—
 var dataURL = reader.result;
-//data URL‚ğ”wŒi‚Éİ’è
+//data URLã‚’èƒŒæ™¯ã«è¨­å®š
 $("img#uploadfile_2").attr("src",dataURL);
-//data URL‚ğlocalStorage‚É•Û‘¶
+//data URLã‚’localStorageã«ä¿å­˜
 localStorage.background = dataURL;
 }
 
 if(Number((file.size/1024)/1024).toFixed(2)>500){
 $("div#glayLayer").show();	
-$("div#overLayer").show().html("<font color='red'>ƒtƒ@ƒCƒ‹ƒTƒCƒY‚Í500MBˆÈ“à‚Éû‚ß‚Ä‰º‚³‚¢B</font><br>").css({
+$("div#overLayer").show().html("<font color='red'>ãƒ•ã‚¡ã‚¤ãƒ«ã‚µã‚¤ã‚ºã¯500MBä»¥å†…ã«åã‚ã¦ä¸‹ã•ã„ã€‚</font><br>").css({
 marginTop:"-"+$("div#overLayer").height()/2+"px",
 marginLeft:"-"+$("div#overLayer").width()/2+"px"
 });
@@ -226,8 +225,8 @@ $(this).attr("src",b)
 } 
 else{
 $("img#uploadfile_2").remove();
-//V‹Kƒtƒ@ƒCƒ‹“ü—Íî•ñ
-//V‹Kƒtƒ@ƒCƒ‹“ü—Íî•ñ
+//æ–°è¦ãƒ•ã‚¡ã‚¤ãƒ«å…¥åŠ›æƒ…å ±
+//æ–°è¦ãƒ•ã‚¡ã‚¤ãƒ«å…¥åŠ›æƒ…å ±
 $("div#glayLayer").show();
 $("div#overLayer").show().html('<div align="center"><img src="../css/close_button_white30.png" class="close"/>'+'<img id="uploadfile_2" class="img" width="240px" height="180px" style="margin-bottom:10px; margin-top:10px"></div>'+'<font size="3"><b>'+
 '<br>'+'Filename:&nbsp;'+file.name +'<br>'+
@@ -292,17 +291,17 @@ i=0;
 var reader = new FileReader();
     reader.readAsDataURL(file);
     reader.onload = function(){
-//data URL‚ğæ“¾
+//data URLã‚’å–å¾—
 var dataURL = reader.result;
-//data URL‚ğ”wŒi‚Éİ’è
+//data URLã‚’èƒŒæ™¯ã«è¨­å®š
 $("img#uploadfile_3").attr("src",dataURL);
-//data URL‚ğlocalStorage‚É•Û‘¶
+//data URLã‚’localStorageã«ä¿å­˜
 localStorage.background = dataURL;
 }
 
 if(Number((file.size/1024)/1024).toFixed(2)>500){
 $("div#glayLayer").show();	
-$("div#overLayer").show().html("<font color='red'>ƒtƒ@ƒCƒ‹ƒTƒCƒY‚Í500MBˆÈ“à‚Éû‚ß‚Ä‰º‚³‚¢B</font><br>").css({
+$("div#overLayer").show().html("<font color='red'>ãƒ•ã‚¡ã‚¤ãƒ«ã‚µã‚¤ã‚ºã¯500MBä»¥å†…ã«åã‚ã¦ä¸‹ã•ã„ã€‚</font><br>").css({
 marginTop:"-"+$("div#overLayer").height()/2+"px",
 marginLeft:"-"+$("div#overLayer").width()/2+"px"
 });
@@ -323,8 +322,8 @@ $(this).attr("src",b)
 } 
 else{
 $("img#uploadfile_3").remove();
-//V‹Kƒtƒ@ƒCƒ‹“ü—Íî•ñ
-//V‹Kƒtƒ@ƒCƒ‹“ü—Íî•ñ
+//æ–°è¦ãƒ•ã‚¡ã‚¤ãƒ«å…¥åŠ›æƒ…å ±
+//æ–°è¦ãƒ•ã‚¡ã‚¤ãƒ«å…¥åŠ›æƒ…å ±
 $("div#glayLayer").show();
 $("div#overLayer").show().html('<div align="center"><img src="../css/close_button_white30.png" class="close"/>'+'<img id="uploadfile_3" class="img" width="240px" height="180px" style="margin-bottom:10px; margin-top:10px"></div>'+'<font size="3"><b>'+
 '<br>'+'Filename:&nbsp;'+file.name +'<br>'+
@@ -389,17 +388,17 @@ i=0;
 var reader = new FileReader();
     reader.readAsDataURL(file);
     reader.onload = function(){
-//data URL‚ğæ“¾
+//data URLã‚’å–å¾—
 var dataURL = reader.result;
-//data URL‚ğ”wŒi‚Éİ’è
+//data URLã‚’èƒŒæ™¯ã«è¨­å®š
 $("img#uploadfile_4").attr("src",dataURL);
-//data URL‚ğlocalStorage‚É•Û‘¶
+//data URLã‚’localStorageã«ä¿å­˜
 localStorage.background = dataURL;
 }
 
 if(Number((file.size/1024)/1024).toFixed(2)>500){
 $("div#glayLayer").show();	
-$("div#overLayer").show().html("<font color='red'>ƒtƒ@ƒCƒ‹ƒTƒCƒY‚Í500MBˆÈ“à‚Éû‚ß‚Ä‰º‚³‚¢B</font><br>").css({
+$("div#overLayer").show().html("<font color='red'>ãƒ•ã‚¡ã‚¤ãƒ«ã‚µã‚¤ã‚ºã¯500MBä»¥å†…ã«åã‚ã¦ä¸‹ã•ã„ã€‚</font><br>").css({
 marginTop:"-"+$("div#overLayer").height()/2+"px",
 marginLeft:"-"+$("div#overLayer").width()/2+"px"
 });
@@ -420,8 +419,8 @@ $(this).attr("src",b)
 } 
 else{
 $("img#uploadfile_4").remove();
-//V‹Kƒtƒ@ƒCƒ‹“ü—Íî•ñ
-//V‹Kƒtƒ@ƒCƒ‹“ü—Íî•ñ
+//æ–°è¦ãƒ•ã‚¡ã‚¤ãƒ«å…¥åŠ›æƒ…å ±
+//æ–°è¦ãƒ•ã‚¡ã‚¤ãƒ«å…¥åŠ›æƒ…å ±
 $("div#glayLayer").show();
 $("div#overLayer").show().html('<div align="center"><img src="../css/close_button_white30.png" class="close"/>'+'<img id="uploadfile_4" class="img" width="240px" height="180px" style="margin-bottom:10px; margin-top:10px"></div>'+'<font size="3"><b>'+
 '<br>'+'Filename:&nbsp;'+file.name +'<br>'+
@@ -485,17 +484,17 @@ i=0;
 var reader = new FileReader();
     reader.readAsDataURL(file);
     reader.onload = function(){
-//data URL‚ğæ“¾
+//data URLã‚’å–å¾—
 var dataURL = reader.result;
-//data URL‚ğ”wŒi‚Éİ’è
+//data URLã‚’èƒŒæ™¯ã«è¨­å®š
 $("img#uploadfile_5").attr("src",dataURL);
-//data URL‚ğlocalStorage‚É•Û‘¶
+//data URLã‚’localStorageã«ä¿å­˜
 localStorage.background = dataURL;
 }
 
 if(Number((file.size/1024)/1024).toFixed(2)>500){
 $("div#glayLayer").show();	
-$("div#overLayer").show().html("<font color='red'>ƒtƒ@ƒCƒ‹ƒTƒCƒY‚Í500MBˆÈ“à‚Éû‚ß‚Ä‰º‚³‚¢B</font><br>").css({
+$("div#overLayer").show().html("<font color='red'>ãƒ•ã‚¡ã‚¤ãƒ«ã‚µã‚¤ã‚ºã¯500MBä»¥å†…ã«åã‚ã¦ä¸‹ã•ã„ã€‚</font><br>").css({
 marginTop:"-"+$("div#overLayer").height()/2+"px",
 marginLeft:"-"+$("div#overLayer").width()/2+"px"
 });
@@ -516,8 +515,8 @@ $(this).attr("src",b)
 } 
 else{
 $("img#uploadfile_5").remove();
-//V‹Kƒtƒ@ƒCƒ‹“ü—Íî•ñ
-//V‹Kƒtƒ@ƒCƒ‹“ü—Íî•ñ
+//æ–°è¦ãƒ•ã‚¡ã‚¤ãƒ«å…¥åŠ›æƒ…å ±
+//æ–°è¦ãƒ•ã‚¡ã‚¤ãƒ«å…¥åŠ›æƒ…å ±
 $("div#glayLayer").show();
 $("div#overLayer").show().html('<div align="center"><img src="../css/close_button_white30.png" class="close"/>'+'<img id="uploadfile_5" class="img" width="240px" height="180px" style="margin-bottom:10px; margin-top:10px"></div>'+'<font size="3"><b>'+
 '<br>'+'Filename:&nbsp;'+file.name +'<br>'+
