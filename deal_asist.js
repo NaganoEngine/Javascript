@@ -1,3 +1,4 @@
+
 $(function(){
 $("img#cici").mouseover(function(){
 $(this).attr("src","../css/deal/deal_cicishop50.png").mouseout(function(){
