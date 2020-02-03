@@ -1,1 +1,202 @@
 
+$(document).ready(function(){
+
+//端末判定
+var $ua = navigator.userAgent;
+//ブラウザ判別
+var userAgent = window.navigator.userAgent.toLowerCase();
+//画面幅
+var $width = window.innerWidth;
+//ページ判定
+var $url = document.location.href;
+var $this_page = $url.substr(23);
+
+/*---------------------------Device Begin---------------------------*/
+if($ua.indexOf('iPhone') > 0 || $ua.indexOf('iPad') > 0 || $ua.indexOf('Android') > 0 && $ua.indexOf('Mobile') > 0 ){
+
+
+/*---------------------------------MS Begin---------------------------------*/
+if(userAgent.indexOf('msie') != -1 || userAgent.indexOf('trident') != -1 || userAgent.indexOf('edge') != -1)
+{
+console.log('SP_MS');
+$.ajax({
+url: "",
+type: "GET",
+dataType: "script"
+}).done(function(data) {
+data;
+// eval($data);
+});
+
+/*---------------------------------MS End---------------------------------*/
+/*---------------------------------Chrome Begin---------------------------------*/
+} else if(userAgent.indexOf('chrome') != -1) {
+
+$.ajax({
+url: "",
+type: "GET",
+dataType: "script"
+}).done(function(data) {
+data;
+// eval($data);
+});
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------Safari Begin---------------------------------*/
+} else if(userAgent.indexOf('safari') != -1) {
+
+
+$.ajax({
+url: "",
+type: "GET",
+dataType: "script"
+}).done(function(data) {
+data;
+// eval($data);
+});
+
+/*---------------------------------Safari End---------------------------------*/
+
+/*---------------------------------Firefox Begin---------------------------------*/
+} else if(userAgent.indexOf('firefox') != -1) {
+console.log('SP_FireFox');
+
+$.ajax({
+url: "",
+type: "GET",
+dataType: "script"
+}).done(function(data) {
+data;
+// eval($data);
+});
+
+/*---------------------------------Firefox End---------------------------------*/
+/*---------------------------------Opera Begin---------------------------------*/
+} else if(userAgent.indexOf('opera') != -1) {
+console.log('SP_Opera');
+
+$.ajax({
+url: "",
+type: "GET",
+dataType: "script"
+}).done(function(data) {
+data;
+// eval($data);
+});
+
+/*---------------------------------Opera End---------------------------------*/
+/*---------------------------------ETC Begin---------------------------------*/
+} else {
+console.log('Unknown');
+}
+/*---------------------------------ETC END---------------------------------*/
+
+
+
+}
+/*---------------------------SP END-----------------------------------*/
+
+/*---------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+
+/*---------------------------PC Begin-----------------------------------*/
+
+if($ua.indexOf('iPhone') <= 0 && $ua.indexOf('iPad') <= 0 && $ua.indexOf('Android') <= 0 && $ua.indexOf('Mobile') <= 0 ){
+
+/*---------------------------------MS Begin---------------------------------*/
+if(userAgent.indexOf('msie') != -1 || userAgent.indexOf('trident') != -1 || userAgent.indexOf('edge') != -1)
+{
+console.log('PC_MS');
+
+$.ajax({
+url: "",
+type: "GET",
+dataType: "script"
+}).done(function(data) {
+data;
+// eval($data);
+});
+
+
+/*---------------------------Product Preview Open Over668 END(MS)---------------------------*/
+/*---------------------------------MS End---------------------------------*/
+/*---------------------------------Chrome Begin---------------------------------*/
+} else if(userAgent.indexOf('chrome') != -1) {
+
+$.ajax({
+url: "",
+type: "GET",
+dataType: "script"
+}).done(function(data) {
+data;
+// eval($data);
+});
+
+
+/*---------------------------------Chrome End---------------------------------*/
+/*---------------------------------Safari Begin---------------------------------*/
+} else if(userAgent.indexOf('safari') != -1) {
+
+$.ajax({
+url: "",
+type: "GET",
+dataType: "script"
+}).done(function(data) {
+data;
+// eval($data);;
+});
+
+/*---------------------------------Firefox Begin---------------------------------*/
+} else if(userAgent.indexOf('firefox') != -1) {
+console.log('PC_FireFox');
+
+$.ajax({
+url: "",
+type: "GET",
+dataType: "script"
+}).done(function(data) {
+data;
+// eval($data);
+});
+
+/*---------------------------------Firefox End---------------------------------*/
+/*---------------------------------Opera Begin---------------------------------*/
+} else if(userAgent.indexOf('opera') != -1) {
+console.log('PC_Opera');
+
+$.ajax({
+url: "",
+type: "GET",
+dataType: "script"
+}).done(function(data) {
+data;
+// eval($data);
+});
+
+
+/*---------------------------Product Preview Open Over668 END(Opera)---------------------------*/
+/*---------------------------------Opera End---------------------------------*/
+/*---------------------------------ETC Begin---------------------------------*/
+} else {
+console.log('Unknown');
+}
+/*---------------------------------ETC END---------------------------------*/
+
+
+}//pc_end
+/*---------------------------PC END-----------------------------------*/
+
+
+});
+
+
+
+//Slowest Loading
+$(window).on('load',function(){
+
+
+
+});//load
